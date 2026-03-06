@@ -1,0 +1,19 @@
+apiVersion: flink.apache.org/v1beta1
+kind: FlinkDeployment
+metadata:
+  name: paimon-query-cluster
+spec:
+  image: <your-custom-image-with-paimon-jars>
+  flinkVersion: v1_18 # Match your version
+  flinkConfiguration:
+    taskmanager.numberOfTaskSlots: "2"
+    # Essential for Paimon
+    state.checkpoints.dir: s3://your-bucket/checkpoints
+  jobManager:
+    resource:
+      memory: "2048m"
+      cpu: 1
+  taskManager:
+    resource:
+      memory: "2048m"
+      cpu: 1
