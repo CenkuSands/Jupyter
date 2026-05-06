@@ -1,0 +1,30 @@
+# requirements.txt with specific versions
+# Format: package==version
+uv
+jupyter-server-proxy==4.4.0
+jupyter_scheduler
+
+# Security Patches
+Brotli>=1.2.0
+GitPython>=3.1.41
+Jinja2>=3.1.5
+pillow>=11.0.0
+cryptography>=42.0.4
+jupyter-lsp>=2.2.2
+jupyter-server-proxy>=4.2.0
+jupyterhub>=4.1.0
+fonttools>=4.60.2
+idna>=3.7
+jupyterlab-git>=0.51.1
+setuptools>=70.0.0
+urllib3>=2.6.0
+notebook>=7.2.2
+pyarrow>=18.0.0
+aiohttp>=3.13.3
+jupyter_core==5.8.1
+protobuf==4.25.8
+tornado==6.5
+wheel==0.46.2
+bokeh==3.8.2
+distributed==2026.1.1
+jupyter_server==2.14.1
